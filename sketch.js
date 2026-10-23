@@ -28,6 +28,9 @@ function draw() {
   background(0, 0, 0);
 
   let red = sin(frameCount * 0.02) * 50;
+  let yellow = sin(frameCount * 0.05) * 50;
+  let blue = sin(frameCount * 0.04) * 50;
+  
 
   fill(238 + red, 36, 0);
   quad(0, 0, 362, 0, 362, 316, 0, 316);
@@ -40,10 +43,10 @@ function draw() {
   quad(373, 770, 608, 770, 608, 800, 373, 800);
   quad(620, 527, 800, 527, 800, 800, 620, 800);
 
-  fill(250, 209, 0);
+  fill(250, 209 + yellow, 0);
   quad(0, 527, 75, 527, 75, 800, 0, 800);
 
-  fill(31, 32, 117);
+  fill(31, 32, 117 + blue);
   quad(373, 527, 608, 527, 608, 757, 373, 757);
 
 
