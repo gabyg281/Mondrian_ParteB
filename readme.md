@@ -1,5 +1,5 @@
 # Parte B — Desestabilização
 
-Nesta segunda fase do trabalho optei por quebrar a ordem rígida de Mondrian simulando uma instabilidade no quadrado vermelho da obra. A composição mantém-se geometricamente perfeita, mas as cores "respiram" e corrompem-se de forma assíncrona.
+Nesta segunda fase do trabalho, optei por quebrar a ordem rígida de Mondrian através de uma simulação de instabilidade no quadrado vermelho da obra. A grelha geométrica mantém-se estática e perfeita, mas as cores "respiram" e corrompem-se de forma subtil.
 
-Eu tive como objetivo usar de base o sketch da parte A, mas tive de alterar pois a textura estava a criar perturbação não pretendida na obra, depois de resolver isso, inseri uma função de oscilação baseada no seno, para então provocar uma oscilação subtil "destabilizando" assim a obra.
+Para implementar esta animação usando o sketch da Parte A, tive de otimizar o código: isolei a textura gerativa pesada numa camada gráfica independente (createGraphics), evitando que o ciclo contínuo da animação acumulasse ruído visual até escurecer a obra. Após resolver esta sobreposição, introduzi o tempo (frameCount) como input para alimentar uma função de oscilação trigonométrica baseada no seno (sin()). Esta expressão matemática modula subtilmente os valores RGB das cores, gerando como output uma desestabilização contínua e orgânica que injeta vida na composição sem destruir a sua essência geométrica.
